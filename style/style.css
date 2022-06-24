@@ -1,0 +1,257 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+        
+}
+
+
+/* ---------------------seccion header----------------------- */
+
+header {
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+           
+}
+
+
+header nav ul li {
+    align-items: center ;
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 100px;
+    margin-top: 60px;
+    font-size: 30px;
+    font-family: 'Creepster', cursive;
+    margin-bottom: 20px;
+    height: 30px;
+    
+}
+
+.item {
+    font-weight: 900;
+    border-color: black;
+    text-decoration: none;
+    color: black
+    }
+
+.titulo {
+    position: relative;
+    text-align: center;
+    top: 45px;
+    font-family: 'Creepster', cursive;
+    font-size: 70px;  
+}
+
+
+
+/* ---------------------seccion main----------------------- */
+
+main {
+    margin-top: 30px;
+    background-color: black;
+    margin-top: 0%;
+    font-family: 'Glegoo', serif;
+
+}
+
+
+.titulonoticia {
+    color: aliceblue;
+    font-family: 'Creepster', cursive;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+         
+}
+
+
+.trailer
+{
+    border: solid; border-color: rgb(34, 7, 59);
+    width: 600px;
+    background-color: rgb(34, 7, 59);
+    font-family: 'Glegoo', serif;
+    text-align: justify;
+    color: aliceblue;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 40px;
+    border-radius: 10px;
+   
+}
+
+
+
+.reportaje {
+    border: solid; border-color: rgb(34, 7, 59);
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: rgb(34, 7, 59);
+    font-family: 'Glegoo', serif;
+    text-align: justify;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: aliceblue;
+    padding-bottom: 15px;
+
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+
+.noticias {
+    background-color: black;
+}
+
+
+
+p {
+    font-size: 15px;
+    text-align: justify;
+    color: aliceblue;
+    font-family: 'Glegoo', serif;
+   
+}
+
+.vermas {
+    color: blueviolet;
+    font-size: 40px;
+    font-family: 'Creepster', cursive;
+    padding: 30px;
+    text-decoration: none;
+    background-color: black;
+    
+}
+
+.seguir { 
+    color: aliceblue;
+    list-style: none;
+    
+}
+
+.articulos {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+}
+
+.imagen img{
+    width: 100%;
+}
+
+.trailer-imagen img{
+    
+    width: 100%;
+    
+}
+
+
+.imagen2 img{
+    display: flex;
+    justify-content: center;
+    margin-left: 400px;
+    
+}
+
+/* ---------------------seccion footer----------------------- */
+
+
+footer { 
+    background-color: black;
+    align-items: center;
+    padding: 20px;
+
+}
+
+
+.siguenos {
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Creepster', cursive;
+    text-align: center
+    
+}
+
+.redes {
+   
+    text-decoration: none;
+    color: aliceblue;
+    list-style: none;
+    margin-left: 200px;
+    font-size: 15px;
+    border: solid; 
+    border-color: rgb(34, 7, 59);
+    font-family: 'Glegoo', serif;
+    border-radius: 10px;
+     
+}
+
+
+li {
+    display: inline-block;
+    align-items: center;
+}
+
+
+
+
+/* ---------------------grids---------------------- */
+
+
+.contenedorgrids {
+    display: grid;
+    
+    grid-template-rows: 12% 10% 25% 10% 29% 5% 9%;
+    grid-template-areas: 
+    "header header" 
+    "titulo titulo"
+    "noticia1 noticia2" 
+    "titulo2 titulo2"
+    "reportaje reportaje"
+    "vermas vermas"
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+    
+}
+
+.ultimasnoticias {
+    grid-area: titulo;
+    background-color: black
+}
+
+.trailer {
+    grid-area: noticia1;
+}
+    
+
+.noticias2 {
+    grid-area: noticia2;
+}
+
+.reportajes {
+    grid-area: titulo2;
+}
+
+.reportaje {
+    grid-area: reportaje;
+}
+.vermas {
+    grid-area: vermas;
+    background-color: black;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
