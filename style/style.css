@@ -41,7 +41,12 @@ header nav ul li {
     text-align: center;
     top: 45px;
     font-family: 'Creepster', cursive;
-    font-size: 70px;  
+    font-size: 80px; 
+    text-shadow: 10px 10px rgb(94, 11, 94);
+    
+    animation-name: tituloEnMovimiento;
+    animation-duration: 5s;
+    animation-direction: reverse;
 }
 
 
@@ -70,9 +75,8 @@ main {
 
 .trailer
 {
-    border: solid; border-color: rgb(34, 7, 59);
+    
     width: 600px;
-    background-color: rgb(34, 7, 59);
     font-family: 'Glegoo', serif;
     text-align: justify;
     color: aliceblue;
@@ -80,17 +84,18 @@ main {
     padding-right: 15px;
     margin-top: 40px;
     border-radius: 10px;
+    background: linear-gradient(rgb(65, 7, 65),black);
    
 }
 
 
 
 .reportaje {
-    border: solid; border-color: rgb(34, 7, 59);
+    
     margin-top: 40px;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: rgb(34, 7, 59);
+    background: linear-gradient(rgb(65, 7, 65),black);
     font-family: 'Glegoo', serif;
     text-align: justify;
     border-radius: 10px;
@@ -121,7 +126,7 @@ p {
 }
 
 .vermas {
-    color: blueviolet;
+    color: rgb(65, 7, 65);
     font-size: 40px;
     font-family: 'Creepster', cursive;
     padding: 30px;
@@ -187,7 +192,7 @@ footer {
     margin-left: 200px;
     font-size: 15px;
     border: solid; 
-    border-color: rgb(34, 7, 59);
+    border-color: rgb(65, 7, 65);
     font-family: 'Glegoo', serif;
     border-radius: 10px;
      
@@ -254,4 +259,32 @@ footer {
     grid-area: footer;
 }
 
+@keyframes tituloEnMovimiento {
+    0%{
+        
+        top: 50px;
+        right: 50px;
+    }
 
+    25%{
+        top: 50px;
+        right: 100px;
+    }
+
+    50% {
+        top: 50px;
+        right: 50px;
+    }
+
+    75% {
+        top: 50px;
+        left: 100px;
+    }
+
+    100% {
+        top: 50px;
+        right: 50px;
+    }
+
+   
+}
